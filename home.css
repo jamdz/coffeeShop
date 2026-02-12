@@ -1,0 +1,624 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header css */
+header{
+    /* border: 2px solid red; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+    padding: 1rem;
+    /* box-shadow: tomato; */
+}
+
+.img-logo img{
+    width: 150px;
+}
+
+/* nav css */
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+}
+li{
+    list-style: none;
+}
+li a{
+text-decoration: none;
+color: black;
+}
+
+.font-container{
+    display: flex;
+    gap: 2rem;
+}
+/* Hero Section */
+
+.heroSection{
+    max-width: 750vh;
+    margin: 4rem 2rem;
+}
+.heroContainer{
+    display: flex;
+    flex: 1;
+    gap: 3rem;
+}
+.heroContainerOne img{
+    width: 800px;
+}
+.heroContainerTwo img{
+    width: 100px;
+    margin: 20px 0;
+}
+.contentTwoHeading{
+    font-family: "Roboto", sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.contentTwoSecondText{
+    font-family: "Inter", sans-serif;
+    margin: 20px 0;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(17, 17, 17);
+    line-height: 1.5;
+}
+.heroContainerTwo-btn button{
+    background-color: rgb(100, 151, 57);
+    padding: 17px 38px;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: "Inter", sans-serif;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 2s;
+}
+
+.heroContainerTwo-btn button:hover{
+    background-color: rgb(48, 73, 21);
+}
+/* Service Section Css */
+.serviceSection{
+    margin: 4rem 0;
+}
+.serviceContainer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    color: white;
+}
+.serviceContainerOne{
+    background-color: rgb(48, 48, 48);
+    padding: 28px 28px;
+    display: flex;
+    gap: 10px;
+    margin: 3rem 0;
+    border-radius: 10px;
+}
+
+.serviceContent p{
+    margin-top: 5px;
+}
+
+.serviceIcon i{
+    color: green;
+    font-size: 17px;
+}
+
+/* Grid Css Style */
+
+.gridContainer{
+    display: grid;
+    /* grid-template-colum: 2000px 200px 200px */
+    /*  */
+    max-width: 550vw;
+    margin: 4rem 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 200px 200px 300px 300px; */
+    gap: 20px;
+}
+
+.Griddisplay{
+    height: 90dvh;
+}
+
+.box-1-1 img{
+    width: 90%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.box-1-1 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.box-1-1-ui{
+    line-height: 2.2em;
+    text-align: center;
+}
+
+.box-1-1-ui ul li:nth-child(1){
+    font-weight: 700;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+
+.box-1-1-ui ul li:nth-child(3){
+    font-weight: 300;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+
+.div-font-hilight {
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    gap: 5px;
+    padding-left: 130px;
+}
+
+.box1{
+    position: relative;
+}
+.box1-price-notification{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #3bf845;
+    right: 30px;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+.box1-price-notification p{
+     font-weight: 100;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .9rem;
+}
+/* .div-font-hilight p{
+    text-align: center;
+} */
+
+.box-1-1-ui h6{
+    width: 100%;
+    height: 3dvh;
+    font-weight: 100;
+    color: #9e9d9d;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+.stars-div-icons i{
+    color:#9e9d9d;
+    font-size: 1.2rem;
+}
+
+
+
+/* Social SideBar Css */
+.socialBar_Container{
+    background-color: #ebe5e5;
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: 600;
+}
+.Soical-Bar-Icons i{
+    color: black;
+    font-size: 2rem;
+}
+
+/* Other product menu card section */
+.product-card-menu{
+    background-color: #f1eded;
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+}
+.product-card-heading{
+    position: absolute;
+    width: 100%;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.produc-main-container{
+    width: 100%;
+    height: 160dvh;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.product-main-card-1{
+    background-color: white;
+    box-shadow: 0  6px 17px rgb(117, 115, 115);
+    width: 28%;
+    height: 60dvh;
+    border: 2px solid red;
+     margin-top: 150px;
+     padding: 2rem;
+     border-radius: 5px;
+     border: 0;
+     position: relative;
+}
+
+.product-main-card-1 h5{
+    font-weight:bolder;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.9rem;
+    margin-top: 2rem;
+}
+.product-main-card-1 p{
+    line-height: 1.5em;
+      font-weight:100;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.product-main-card-1 button{
+    letter-spacing: .1em;
+      font-weight:800;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-left: 1.1rem;
+    padding: 20px;
+    background-color: #2d9732;
+    border-radius: 5px;
+    width: 200px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.product-main-card-1 button:hover{
+    background-color: #57ec5e;
+}
+
+.product-main-card-1:nth-child(1){
+    background-image: url("./assets/download.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.product-main-card-1:nth-child(2){
+    background-image: url("./assets/vegist.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.product-main-card-1:nth-child(3){
+    background-image: url("./assets/nut.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.product-menu-purchase{
+    width: 100%;
+    height: 30dvh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.product-menu-purchase::after{
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+     border-top: 17px solid #000;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    z-index: 400;
+}
+
+
+.product-menu-purchase h4{
+    letter-spacing: .1em;
+    font-weight:800;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.7rem;
+}
+
+.product-menu-purchase button{
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #2d9732;
+    width: 250px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-weight:800;
+    color: white;
+    font-size: 1.3rem;
+    font-family:'Courier New', Courier, monospace;
+}
+.product-menu-purchase button i{
+    padding-right: 5px;
+    font-size: 1.5rem;
+}
+
+.product-menu-sub-heading{
+    width: 100%;
+    height: 20dvh;
+    background-color: #ebe5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-menu-sub-heading h4{
+    font-weight:600;
+    color: #000;
+    font-size: 1.7rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Trending Products Css */
+.treding-product-Heading{
+    width: 100%;
+    height: 20dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 6rem;
+}
+.treding-product-Heading h4{
+     font-weight:600;
+    color: #000;
+    font-size: 2.6rem;
+    font-family:'Courier New', Courier, monospace;
+}
+.treding-product-Heading img{
+    width: 100px;
+}
+
+.trending-products-section{
+    width: 100%;
+    height: 120dvh;
+}
+
+/* Customer Review Css */
+.customer-review-section{
+    width: 100%;
+    height: 125dvh;
+}
+
+.customer-review-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 125dvh;
+    align-items: center;
+}
+.customer-review-1{
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 70dvh;
+    border-radius: 10px;
+    box-shadow: 0  6px 6px rgb(117, 115, 115);
+}
+
+.customer-review-1:nth-child(1), .customer-review-1:nth-child(3){
+    height: 50dvh;
+    margin-top: 10rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight:500;
+    color: #252525;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.customer-review-1:nth-child(1) p, .customer-review-1:nth-child(3) p{
+    padding-top: 1rem;
+}
+
+.customer-img{
+    background-image: linear-gradient(rgba(75, 74, 74, 0.65)), url("./assets/redpepper.jpg");
+    background-size: cover;
+    transition: all 3s ease;
+}
+
+.customer-img:hover{
+    background-image: linear-gradient(rgba(66, 65, 65, 0.53)), url("./assets/redpepper.jpg");
+    /* transition: all 3s ease; */
+}
+
+
+.customer-p-h4-btn{
+    display: flex;
+    flex-direction: column;
+    line-height: 4rem;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 30px;
+}
+
+.customer-p-h4-btn h4{
+    font-size: 2.9rem;
+    font-weight:800;
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.customer-p-h4-btn p{
+    font-size: 1.3rem;
+    font-weight:200;
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 2rem;
+    padding-top: 2rem;
+}
+
+.customer-review-1 button{
+    background-color: #2d9732;
+    color: #ffffff;
+    padding: 20px;
+    width: 220px;
+    font-size: 1.3rem;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 6rem;
+}
+
+.customer-review-cirle{
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 20px;
+}
+
+/* Company Partnership Section */
+.company-patner-section{
+    width: 100%;
+    height: 30dvh;
+}
+.company-pat-contianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+    height: 30dvh;
+}
+
+.company-pat-img{
+    display: flex;
+    gap: 50px;
+}
+
+.company-pat-img img{
+    width: 180px;
+}
+
+.company-pat-contianer h5{
+    color: #000;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.9rem;
+}
+
+/* footer section css */
+
+.footerContainer{
+    width: 100%;
+    height: 85dvh;
+    background-color: #000;
+    color: #ffffff;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60dvh;
+    margin-left: 3rem;
+}
+
+.footerContainerImage p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    padding-top: 3rem;
+    line-height: 2rem;
+    font-weight: 800;
+}
+
+.footer_content_one h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.3rem;
+    padding-top: 3rem;
+    font-weight: 800;
+}
+
+.footer_content_one  ul{
+    margin-top: 2rem;
+}
+
+.footer_content_one  ul li a{
+    color: #9e9d9d;
+}
+
+.footer_content_one  ul li{
+     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    line-height: 3rem;
+    font-weight: 200;
+}
+
+.footer_content_one{
+    width: 80%;
+    height: 50dvh;
+    padding: 30px;
+}
+
+.footer_cont_one{
+    margin-top: 1rem;
+    width: 100%;
+    height: 20dvh;
+    border-top: 1px solid #ececec;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-around;
+    gap: 35rem;
+    align-items: center;
+}
+
+body, html{
+   overflow-x: hidden;
+}
+
+.footer-social-bars a{
+    color: #ffffff;
+}
+
+.footer-social-bars{
+    display: flex;
+    gap: 45px;
+    margin-right: 1rem;
+}

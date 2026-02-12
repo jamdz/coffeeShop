@@ -1,0 +1,222 @@
+@media (max-width: 767px){
+    /* header css */
+    header{
+        margin: 0;
+    }
+    nav{
+        display: none;
+    }
+    .font-container{
+        display: none;
+    }
+
+    /* hero section css */
+
+    .heroSection{
+        height: 100%;
+    }
+    #heroLeaf{
+        width: 100%;
+    }
+    .heroContainer{
+        flex-direction: column-reverse;
+    }
+
+    /* Grid css section */
+    .Griddisplay{
+        height: 100%;
+    }
+    .gridContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-1-1 img{
+        width: 100%;
+    }
+    .div-font-hilight{
+        padding-left: 5.5rem;
+    }
+
+    /* Service css */
+    .serviceContainer{
+        flex-direction: column;
+    }
+    .serviceSection{
+        height: 100%;
+    }
+    .serviceContainerOne{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .serviceContainerOne:nth-child(1){
+        margin-top: 2rem;
+    }
+     .serviceContainerOne:nth-child(4){
+        margin-bottom: 2rem;
+    }
+    /* Other product menu card section css */
+    .product-card-menu{
+        height: 100%;
+    }
+    .produc-main-container{
+        height: fit-content;
+        flex-direction: column;   
+    }
+    .product-main-card-1{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        height: fit-content;
+    }
+    .product-main-card-1 h5{
+        margin-top: 0;
+    }
+    .product-main-card-1 button{
+        margin-top: 1.3rem;
+    }
+    .product-main-card-1:nth-child(2), .product-main-card-1:nth-child(3){
+        margin-top: 50px;
+    }
+    .product-main-card-1:nth-child(3){
+        margin-bottom: 50px;
+    }
+    /* Product menu section css */
+    .product-menu-section{
+        height: 100%;
+    }
+    .product-menu-purchase{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .product-menu-purchase h4{
+        text-align: center;
+        font-size: 1.7rem;
+        margin-top: 3rem;
+    }
+    .product-menu-purchase button{
+        margin: 1rem 0;
+        width: 200px;
+    }
+    .product-menu-sub-heading{
+        height: fit-content;
+        padding: 30px;
+    }
+    .product-menu-sub-heading h4{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    /* Trending Products Section */
+      .trending-products-section{
+        height: 100%;
+    }
+
+    /* Customer Review Section css */
+    .customer-review-section{
+        height: 100%;
+    }
+     .customer-review-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .treding-product-Heading h4{
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+    .customer-review-1{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .customer-review-1:nth-child(1), .customer-review-1:nth-child(3){
+        margin-top: 50px;
+        /* min-height: 75dvh; */
+        height: fit-content;
+        font-size: 1.1rem;
+    }
+    .customer-review-1:nth-child(2){
+        margin-top: 50px;
+        /* margin-bottom: 40px; */
+        height: fit-content;
+    }
+    .customer-review-1:nth-child(2) h4{
+        font-size: 1.7rem;
+    }
+    .customer-review-1:nth-child(2) p{
+        font-size: 1.1rem;
+        padding-top: 1.1rem;
+    }
+    .customer-review-1 button{
+        margin-top: 2rem;
+    }
+
+    /* Company Partnership Section */
+    .company-patner-section{
+        height: 100%;
+    }
+    .company-pat-contianer{
+        flex-direction: column;
+        height: fit-content;
+        gap: 3rem;
+    }
+    .company-pat-contianer h5{
+       margin-top: 7rem;
+    }
+    .company-pat-img{
+        flex-direction: column;
+        width: 80%;
+        justify-items: center;
+        gap: 50px;
+    }
+    .company-pat-img img{
+        margin: 0 auto;
+    }
+
+    .company-pat-img img:nth-child(5){
+        margin-bottom: 40px;
+    }
+
+    /* footer Section */
+    .footerContainer{
+        height: 100%;
+    }
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        height: fit-content;
+    }
+    .footer_content_one{
+        padding-block-start: 0;
+        padding-block-end: 0;
+        height: fit-content;
+        margin-block-start: 30px;
+        margin-block-end: 30px;
+    }
+    .footer_content_one h2{
+        padding-top: 0;
+    }
+    .footer_content_one ul{
+        margin-top: .3rem;
+    }
+     .footer_content_one:nth-child(1){
+        margin-block-start: 50px;
+        margin-block-end: 0;
+    }
+    .footer_cont_one{
+        flex-direction: column;
+        height: fit-content;
+        gap: 3rem;
+    }
+    .footer_cont_one p{
+        padding-top: 3rem;
+        padding-inline-start: 1rem;
+        padding-inline-end: 1rem;
+        text-align: center;
+    }
+    .footer-social-bars{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-block-end: 3rem;
+        margin-right: 0;
+    }
+}
+
