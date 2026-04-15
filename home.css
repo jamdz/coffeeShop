@@ -18,6 +18,9 @@ header{
     width: 150px;
 }
 
+.hamburger-button{
+    display: none;
+}
 /* nav css */
 
 nav ul{
@@ -30,6 +33,10 @@ li{
 li a{
 text-decoration: none;
 color: black;
+}
+
+nav>ul>li>i{
+    display: none;
 }
 
 .font-container{
