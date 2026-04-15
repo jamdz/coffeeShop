@@ -2,6 +2,11 @@
     /* header css */
     header{
         margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        background-color: #fff;
     }
     nav{
         display: none;
@@ -217,6 +222,48 @@
         grid-template-columns: repeat(4, 1fr);
         padding-block-end: 3rem;
         margin-right: 0;
+    }
+    /* Mobile Responsiveness for nav and hamburger */
+    .hamburger-button{
+        display: block;
+        margin-right: .5rem;
+    }
+    .hamburger-button i{
+        font-size: 2.3rem;
+    }
+    nav.active{
+        background-color: #000;
+        display: block;
+        width: 90%;
+        min-height: 100%;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: width .4s ease-in-out;
+        z-index: 900;
+    }
+    nav.active>ul{
+        display: grid;
+        align-items: center;
+        justify-content: rights;
+        margin-top: 5rem;
+        margin-left: 2.5rem;
+    }
+    nav.active>ul>li{
+        display: inline-flex;
+        gap: 15px;
+    }
+    nav.active>ul>li>i{
+        display: block;
+        font-size: 1.8rem;
+        color: #fff;
+    }
+    nav.active>ul>li>a{
+        color: #fff;
+        font-size: 1.6rem;
+        font-family: 'Courier New', Courier, monospace;
     }
 }
 
