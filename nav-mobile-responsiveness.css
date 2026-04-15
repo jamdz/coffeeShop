@@ -1,0 +1,54 @@
+@media (min-width: 228px) and (max-width: 950px){
+      header{
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    /* Mobile Responsiveness for nav and hamburger */
+    .hamburger-button{
+        display: block;
+        margin-right: .5rem;
+    }
+    .hamburger-button i{
+        font-size: 2.3rem;
+    }
+    nav.active{
+        background-color: #000;
+        display: block;
+        width: 90%;
+        height: 100dvh;
+        min-height: fit-content;
+        position: fixed;
+        top: 107px;
+        left: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 900;
+        overflow-x: hidden;
+    }
+    nav.active>ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5rem;
+        margin-left: 3.5rem;
+    }
+    nav.active>ul>li{
+        display: flex;
+        gap: 15px;
+    }
+    nav.active>ul>li>i{
+        display: block;
+        font-size: 1.8rem;
+        color: #fff;
+    }
+    nav.active>ul>li>a{
+        color: #fff;
+        font-size: 1.6rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
